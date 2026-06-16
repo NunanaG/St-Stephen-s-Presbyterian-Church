@@ -290,7 +290,7 @@ html:not(.js) .reveal{opacity:1;transform:none}
     } else { legacyCopy(s); }
   }
   document.getElementById('share').addEventListener('click',function(){
-    var msg="Join us Sun Aug 30, 2026 at 10 AM for St. Stephen's Family & Friends Service & Summer BBQ!";
+    var msg="Join us Sun Aug 30 at 10 AM for St. Stephen's Family & Friends Service & Summer BBQ \u2014 North York. Free food, all welcome! Tap to see details & RSVP \uD83D\uDC47";
     var payload=msg+" "+location.href;
     if(navigator.share){
       navigator.share({title:"St. Stephen's Family & Friends Service & BBQ",text:msg,url:location.href})
@@ -311,7 +311,7 @@ html:not(.js) .reveal{opacity:1;transform:none}
 
   // RSVP by text — pre-filled message to the church RSVP line
   var RSVP_PHONE = "+14162991089";
-  var RSVP_MSG   = "Hi! We'd like to RSVP for St. Stephen's Family & Friends Service & BBQ on Sun, Aug 30. Party of: ";
+  var RSVP_MSG   = "Hi! RSVP for St. Stephen's Family & Friends Service & BBQ (Sun, Aug 30):\nName: \nNumber coming: \nDietary (vegetarian / Halal / none / other): ";
   var rt=document.getElementById('rsvpText');
   if(rt){ rt.addEventListener('click',function(){
     var ua=navigator.userAgent||"";
